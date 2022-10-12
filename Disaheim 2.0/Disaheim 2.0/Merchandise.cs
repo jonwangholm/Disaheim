@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Disaheim_2._0
 {
-    public class Merchandise
+    public abstract class Merchandise
     {
         string _itemId;
 
@@ -20,6 +20,10 @@ namespace Disaheim_2._0
         public Merchandise (string itemdId)
         {
             ItemId = itemdId;
+        }
+        public override string ToString()
+        {
+            return  "ItemId: " + ItemId;
         }
     }
 }
