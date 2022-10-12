@@ -7,19 +7,11 @@ using System.Threading.Tasks;
 
 namespace Program
 {
-    public class Amulet
+    public class Amulet : Merchandise
     {
 
-        private string itemId;
         private string design;
         private Level quality;
-
-
-        public string ItemId
-        {
-            get { return itemId; }
-            set { itemId = value; }
-        }
 
 
         public string Design
@@ -37,17 +29,16 @@ namespace Program
         }
         public Amulet(string itemId) : this(itemId, Level.medium, "")
         {
-            this.itemId = itemId;
+            ItemId  = itemId;
         }
         public Amulet(string itemId, Level quality) : this(itemId, quality, "")
         {
-            this.itemId = itemId;
+            ItemId = itemId;
             this.quality = quality;
         }
 
-        public Amulet(string itemId, Level quality, string design)
+        public Amulet(string itemId, Level quality, string design) : base(itemId)
         {
-            this.itemId = itemId;
             this.quality = quality;
             this.design = design;
         }
@@ -56,7 +47,7 @@ namespace Program
 
         public override string ToString()
         {
-            return "ItemId: " + itemId + ", " + "Quality: " + quality + ", " + "Design: " + design;
+            return "ItemId: " + ItemId + ", " + "Quality: " + quality + ", " + "Design: " + design;
         }
     }
 

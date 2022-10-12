@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Disaheim_2._0;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,36 +7,28 @@ using System.Threading.Tasks;
 
 namespace Program
 {
-    public class Book
+    public class Book : Merchandise
     {
-        private string itemId;
-        private string title;
-        private double price;
+        private string _title;
+        private double _price;
 
-
-        public string ItemId
-        {
-            get { return itemId; }
-            set { itemId = value; }
-        }
 
         public string Title
         {
-            get { return title; }
-            set { title = value; }
+            get { return _title; }
+            set { _title = value; }
         }
 
         public double Price
         {
-            get { return price; }
-            set { price = value; }
+            get { return _price; }
+            set { _price = value; }
         }
 
-        public Book(string itemId, string title, double price)
+        public Book(string itemId, string title, double price) : base(itemId)
         {
-            this.itemId = itemId;
-            this.title = title;
-            this.price = price;
+            this._title = title;
+            this._price = price;
         }
 
         public Book(string itemId, string title) : this(itemId, title, 0.0)
@@ -52,7 +45,7 @@ namespace Program
 
         public override string ToString()
         {
-            return "ItemId: " + itemId + ", " + "Title: " + title + ", " + "Price: " + price;
+            return "ItemId: " + ItemId + ", " + "Title: " + _title + ", " + "Price: " + _price;
         }
 
 
