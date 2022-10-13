@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Disaheim_2._0;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,18 +7,11 @@ using System.Threading.Tasks;
 
 namespace Program
 {
-    public class Book
+    public class Book : Merchandise
     {
-        private string itemId;
         private string title;
         private double price;
 
-
-        public string ItemId
-        {
-            get { return itemId; }
-            set { itemId = value; }
-        }
 
         public string Title
         {
@@ -33,7 +27,7 @@ namespace Program
 
         public Book(string itemId, string title, double price)
         {
-            this.itemId = itemId;
+            ItemId = itemId;
             this.title = title;
             this.price = price;
         }
@@ -52,7 +46,7 @@ namespace Program
 
         public override string ToString()
         {
-            return "ItemId: " + itemId + ", " + "Title: " + title + ", " + "Price: " + price;
+            return "ItemId: " + ItemId + ", " + "Title: " + title + ", " + "Price: " + price;
         }
 
 
