@@ -5,7 +5,9 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Disaheim 2.0", "Disaheim 2.0\Disaheim 2.0.csproj", "{0CE0618B-1568-46B4-B092-975E655C9165}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisaheimTest", "DisaheimTest\DisaheimTest.csproj", "{AEF4CE53-0EBF-47B2-AD68-BE1293989148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DisaheimTest", "DisaheimTest\DisaheimTest.csproj", "{AEF4CE53-0EBF-47B2-AD68-BE1293989148}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UtilityLib", "UtilityLib\UtilityLib.csproj", "{E5F197F3-1326-4393-9BF0-E9D189894013}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{AEF4CE53-0EBF-47B2-AD68-BE1293989148}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEF4CE53-0EBF-47B2-AD68-BE1293989148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEF4CE53-0EBF-47B2-AD68-BE1293989148}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5F197F3-1326-4393-9BF0-E9D189894013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5F197F3-1326-4393-9BF0-E9D189894013}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5F197F3-1326-4393-9BF0-E9D189894013}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5F197F3-1326-4393-9BF0-E9D189894013}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
